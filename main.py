@@ -41,12 +41,14 @@ def read_temperature():
 # Function to control fan speed based on temperature
 def control_fan_speed(temperature):
     # Set PWM duty cycle based on temperature
-    if temperature < 48:      # Below 48°C, fan is off or at minimum speed
-        pwm0.duty_u16(0)
-    elif temperature > 50:    # Between 50°C and 70°C, fan is at low speed
-        pwm0.duty_u16(32767)  # Duty cycle around 50%
-    elif temperature > 70 :   # Over 70, fan is at max speed
-        pwm0.duty_u16(65535)  # Duty cycle around 75%
+    if temperature < 50:      # Below 50°C, fan is off or at minimum speed
+        pwm0.duty_u16(0)      # Duty cycle around 0%
+    elif temperature > 50:    # Between 50°C and 60°C, fan is at low speed
+        pwm0.duty_u16(13107)  # Duty cycle around 20%
+    elif temperature < 60 and temperature > 50: # Between 60°C and 70°C, fan is at low speed
+        pwm0.duty_u16(21845)  # Duty cycle around 33%
+    elif temperature > 70 :   # Over 70°C, fan is at max speed
+        pwm0.duty_u16(65535)  # Duty cycle around 100%
     else:  # Else, fan is at max speed
         pwm0.duty_u16(65535)  # Duty cycle 100%
 
