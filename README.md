@@ -10,6 +10,7 @@ PWM-Control for Fans on the Radxa-x4 using the built in rp2040 microcontroller
 * wire stripper
 * Noctua NF-A4x20-PWM
 
+
 # Create the Cable
 The noctua-fan comes with a handy little adapter.
 Image below.
@@ -18,12 +19,15 @@ This adapter has two empty slots for dupont-pins to make this fan work with pwm.
 For the mod u just need to populate the outer spot of the adapter and crimp it with dupont-male on one side and female on the other. 
 Also extend the red and black wire and also crimp it with dupont female.
 After u are finished you will have something that looks like this. (image below)
-<br><img width="500" alt="Adapter" src="https://github.com/user-attachments/assets/046d1207-43c1-44fe-be01-aa25fdf17ff6" /><br>
+<br><img width="500" alt="Modded Adapter" src="https://github.com/user-attachments/assets/046d1207-43c1-44fe-be01-aa25fdf17ff6" /><br>
 
 # Pinout
 [Radxa-x4 Pinout in Docs](https://docs.radxa.com/en/x/x4/software/gpio)
 ![GPIO](https://github.com/user-attachments/assets/888ec105-db01-4599-957c-cd892e216e99)
 Connect ground (black) to one of the black terminals on the radxa-x4 (Best is pin 6), connect red to one od the two red terminals (best is pin 4) and last connect the pwm-wire in color blue preferably to pin 8.
+
+# Finished Hardware-setup
+<br><img width="500" alt="Modded Adapter" src="https://github.com/user-attachments/assets/f790cd58-44e5-4833-9227-284f43857bff"/><br>
 
 # Flash MicroPython onto the RP2040 on the Radxa-x4
 Download the project to the radxa-x4 via git or wget or curl.
