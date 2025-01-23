@@ -27,7 +27,8 @@ After u are finished you will have something that looks like this. (image below)
 Connect ground (black) to one of the black terminals on the radxa-x4 (Best is pin 6), connect red to one od the two red terminals (best is pin 4) and last connect the pwm-wire in color blue preferably to pin 8.
 
 # Finished Hardware-setup
-<br><img width="500" alt="Modded Adapter" src="https://github.com/user-attachments/assets/f790cd58-44e5-4833-9227-284f43857bff"/><br>
+<br><img width="500" alt="Modded Adapter" src="https://github.com/user-attachments/assets/5c1a86ae-3d6a-4bd1-8985-794f90a8e23f"/><br>
+<br><img width="500" alt="Modded Adapter" src="https://github.com/user-attachments/assets/24042dc0-6a00-4761-94f7-7c1748f8b39c"/><br>
 
 # Flash MicroPython onto the RP2040 on the Radxa-x4
 Download the project to the radxa-x4 via git or wget or curl.
